@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <style>
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+}
+
+/* الشريط العلوي */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.navbar .nav-links li {
+    margin: 0 15px;
+}
+
+.navbar .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* القسم الرئيسي */
+.home-section {
+    background-image: url('https://scontent.fcai20-2.fna.fbcdn.net/v/t39.30808-6/461400137_386846541145064_3657628008088037264_n.jpg?stp=cp6_dst-jpg_s960x960&_nc_cat=105&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=VSDwx-AU_lMQ7kNvgG3o2CM&_nc_zt=23&_nc_ht=scontent.fcai20-2.fna&_nc_gid=AGzWZWnjW157pphNdf0tr6Z&oh=00_AYDUaPbCDoDOMi8S9EaY7f-xP5YeUBCsC42Gp61KK4eu4A&oe=67333DCE');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    height: 150vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.home-section h1 {
+    font-size: 50px;
+    margin: 0;
+}
+
+.home-section p {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.cta-button {
+    padding: 15px 30px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.cta-button:hover {
+    background: #0056b3;
+}
+
+/* القسم عنّي */
+.about-section {
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.about-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* معرض الصور */
+.gallery-section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.gallery-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.gallery {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+}
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحة الفن الشخصي</title>
+    
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo"> <span>John Mosad</span></div>
+            <ul class="nav-links">
+                <li><a href="#home">الرئيسية</a></li>
+                <li><a href="#about">عنّي</a></li>
+                <li><a href="#gallery">معرض الصور</a></li>
+                <li><a href="#contact">تواصل معي</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- القسم الرئيسي -->
+    <section id="home" class="home-section">
+        <h1>❤ادخل اتفرج❤</span></h1>
+        <p>اكتشف إبداعاتي وأعمالي الفنية هنا.</p>
+        <button class="cta-button" onclick="scrollToSection('about')">اكتشف المزيد</button>
+    </section>
+
+    <!-- قسم عنّي -->
+    <section id="about" class="about-section">
+        <h2>عنّي</h2>
+        <p>أنا فنان متخصص في الرسم ثلاثي الأبعاد وأعمل على خلق تجارب فنية فريدة. أسعى دائمًا لاستكشاف أساليب جديدة وتحقيق رؤى فنية مبتكرة.</p>
+    </section>
+
+    <!-- معرض الصور -->
+    <section id="gallery" class="gallery-section">
+        <h2>معرض الصور</h2>
+        <div class="gallery">
+            <div class="gallery-item"><img src="https://scontent.fcai20-6.fna.fbcdn.net/v/t39.30808-6/462193757_390672067429178_386381187114336417_n.jpg?stp=cp6_dst-jpg_s600x600&_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_ohc=DZmzLMw5nyIQ7kNvgGwvUFZ&_nc_zt=23&_nc_ht=scontent.fcai20-6.fna&_nc_gid=A4mq-0BKuMSmgFX6uWR80MO&oh=00_AYBsA9YWYlb3wACUIlRainaV9pOHCjPB9laYKucRtvdokw&oe=673303C6" alt="صورة 1"></div>
+            <div class="gallery-item"><img src="https://scontent.fcai20-2.fna.fbcdn.net/v/t39.30808-6/462054996_389234337572951_3618555612168957935_n.jpg?stp=cp6_dst-jpg_s600x600&_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_ohc=u6Gg1VfTPs4Q7kNvgGlgzAh&_nc_zt=23&_nc_ht=scontent.fcai20-2.fna&_nc_gid=An0oCS5jgcKMCa7oTWsSwoa&oh=00_AYCYSLIb80_orUqGGOHYhdPQWDibi0vvIlLJYHKPvV57Fw&oe=67333B12" alt="صورة 2"></div>
+            <div class="gallery-item"><img src="https://scontent.fcai20-1.fna.fbcdn.net/v/t39.30808-6/462211800_122119615856463349_6743318580855574284_n.jpg?stp=cp6_dst-jpg_p526x296&_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_ohc=dl1qOTSsTPQQ7kNvgGSkCGF&_nc_zt=23&_nc_ht=scontent.fcai20-1.fna&_nc_gid=An0oCS5jgcKMCa7oTWsSwoa&oh=00_AYB2Chnysh80YPXwqheJBwUcVvyKOGAM5vLxkCm1O9HNFA&oe=6733453E" alt="صورة 3"></div>
+            <div class="gallery-item"><img src="https://scontent.fcai20-3.fna.fbcdn.net/v/t39.30808-6/461409535_382831554879896_4788207496062968343_n.jpg?stp=cp6_dst-jpg_s600x600&_nc_cat=111&ccb=1-7&_nc_sid=833d8c&_nc_ohc=NqqcRVmAgfgQ7kNvgECY0eT&_nc_zt=23&_nc_ht=scontent.fcai20-3.fna&_nc_gid=A4FJyPByobynWagxVnaayhd&oh=00_AYCihZ9hGB8EeaMggLtU1XcedZWY70ye2jErjqoW6g6hew&oe=67332004" alt="صورة 3"></div>
+            <div class="gallery-item"><img src="https://scontent.fcai20-5.fna.fbcdn.net/v/t39.30808-6/459557902_375846558911729_5458894563212230390_n.jpg?stp=dst-jpg_s720x720&_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_ohc=UAGe5WEVwIAQ7kNvgE8WQbz&_nc_zt=23&_nc_ht=scontent.fcai20-5.fna&_nc_gid=A4FJyPByobynWagxVnaayhd&oh=00_AYCemwJKkdR8Tn-VhO1s3-L946SiYY2hrucED7Wz7C0Zuw&oe=67332ED3" alt="صورة 3"></div>
+            <div class="gallery-item"><img src="https://scontent.fcai20-4.fna.fbcdn.net/v/t39.30808-6/365763617_130883990074655_6188222936418211468_n.jpg?stp=dst-jpg_s600x600&_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_ohc=GfLsgkgECG4Q7kNvgHIqplE&_nc_zt=23&_nc_ht=scontent.fcai20-4.fna&_nc_gid=A9wIUa8u8_eBp5ycgl7yF5v&oh=00_AYAsq-6XTrsmiAIllnvsbg2nU5AXlztGLBDQ2f0uqZAImg&oe=6733329C" alt="صورة 3"></div>
+            <div class="gallery-item"><img src="https://scontent.fcai20-3.fna.fbcdn.net/v/t39.30808-6/453300151_345614138601638_7817145439876213377_n.jpg?stp=cp6_dst-jpg_s960x960&_nc_cat=111&ccb=1-7&_nc_sid=833d8c&_nc_ohc=qvelwy_TMH0Q7kNvgEKi8C-&_nc_zt=23&_nc_ht=scontent.fcai20-3.fna&_nc_gid=A9wIUa8u8_eBp5ycgl7yF5v&oh=00_AYDoyL74uvmlP3V4pAzoFmTL7mU6mDTs9QbLamApQBEtZw&oe=673334B6" alt="صورة 3"></div>
+            <div class="gallery-item"><img src="https://scontent.fcai20-3.fna.fbcdn.net/v/t39.30808-6/452006247_338250496004669_8849915842491781725_n.jpg?stp=cp6_dst-jpg_p526x296&_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_ohc=Gys-HtXf1AwQ7kNvgETen0J&_nc_zt=23&_nc_ht=scontent.fcai20-3.fna&_nc_gid=AAAK7A8wdN10E5pk2S3wOey&oh=00_AYCZsyVCJqeuDscWV0GVESyQUDXT8gAU2djFAjoR54mCzw&oe=67332A16" alt="صورة 3"></div>
+            <div class="gallery-item"><img src="https://scontent.fcai20-6.fna.fbcdn.net/v/t39.30808-6/450890869_333400949822957_6971510802867139892_n.jpg?stp=dst-jpg_p526x296&_nc_cat=103&ccb=1-7&_nc_sid=833d8c&_nc_ohc=H7a81AyRahgQ7kNvgG3_8q-&_nc_zt=23&_nc_ht=scontent.fcai20-6.fna&_nc_gid=A3_nrHgpKV_Egvofnw2yf4Y&oh=00_AYCrULLqtwij-QMCu0oM_M43Nf3jouIEQMwTNj1qcNAWYg&oe=67333236" alt="صورة 3"></div>
+            <div class="gallery-item"><img src="https://scontent.fcai20-3.fna.fbcdn.net/v/t39.30808-6/442511240_298160483347004_4253266094653355035_n.jpg?stp=dst-jpg_s600x600&_nc_cat=111&ccb=1-7&_nc_sid=833d8c&_nc_ohc=aJhugTy3x98Q7kNvgEZZyOf&_nc_zt=23&_nc_ht=scontent.fcai20-3.fna&_nc_gid=AXbjw6JCYsO_a04xDyJxGq6&oh=00_AYDmyC2CloMj-AgZHozH6yzDqjIYcyF6gb57ow4682yvCA&oe=6733324F" alt="صورة 3"></div>
+           
+            
+            
+        </div>
+    </section>
+
+    <!-- تواصل معي -->
+    <section id="contact" class="contact-section">
+        <h2>تواصل معي</h2>
+        <h4>012279589617</h4>
+        <form>
+            <input type="text" name="name" placeholder="اسمك" required>
+            <input type="email" name="email" placeholder="بريدك الإلكتروني" required>
+            <textarea name="message" placeholder="رسالتك" required></textarea>
+            <button type="submit">إرسال</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2024 John Mosad - جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
